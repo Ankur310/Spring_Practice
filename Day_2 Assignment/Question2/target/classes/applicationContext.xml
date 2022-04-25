@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    
+    <bean id="multiply" class="com.masai.Multiplication">
+         <constructor-arg value="10"/>
+         <constructor-arg value="20"/>
+    </bean>
+    
+    <bean id="sum" class="com.masai.sum">
+         <constructor-arg value="10"/>
+         <constructor-arg value="20"/>
+    </bean>
+    
+    <bean id="subs" class="com.masai.Substraction">
+         <constructor-arg value="20"/>
+         <constructor-arg value="10"/>
+    </bean>
+    
+    
+    <bean id="divide" class="com.masai.Division">
+         <constructor-arg value="20"/>
+         <constructor-arg value="10"/>
+    </bean>
+</beans>

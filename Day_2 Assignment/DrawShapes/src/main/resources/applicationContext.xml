@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="traingle" class ="com.question1.ci.Traingle">
+	   <constructor-arg value="Traingle"/>
+	</bean>
+	<bean id="circle" class="com.question1.ci.Circle">
+	   <constructor-arg value="Circle"/>	
+	</bean>
+	<bean id="cylinder" class="com.question1.ci.Cylinder">
+	   <constructor-arg value="Cylinder"/>
+	</bean>
+	
+	
+	
+	<bean id="trSi" class="com.question1.si.TraingleSi">
+	   <property name="shape" value="Traingle"/>
+	</bean>
+	
+	<bean id="ciSi" class="com.question1.si.CircleSi">
+	<property name="shape" value="Circle"/>
+	  
+	</bean>
+	
+	<bean id="cySi" class="com.question1.si.CylinderSi">
+	    <property name="shape" value="Cylinder"/>
+	  
+	</bean>
+</beans>
